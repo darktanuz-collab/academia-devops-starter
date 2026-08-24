@@ -1,0 +1,63 @@
+# Salesforce / SFDX specific
+.sfdx/
+.salesforce/
+.DS_Store
+*.swp
+.vscode/
+.idea/
+
+# Salesforce cache
+.sfCache/
+
+# LWC VSCode cache
+.lwc-language-server/
+
+# Local history for Visual Studio Code
+.history/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependencies
+node_modules/
+
+# Project dependencies
+package-lock.json
+yarn.lock
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS
+Thumbs.db
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Build output
+dist/
+build/
+out/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak

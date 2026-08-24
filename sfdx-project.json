@@ -1,0 +1,18 @@
+{
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "61.0",
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "package": "AcademiaDevOps",
+      "versionNumber": "1.0.0.0",
+      "default": true
+    }
+  ],
+  "name": "Academia DevOps Starter",
+  "namespace": "",
+  "description": "Starter repository for Salesforce DevOps training bootcamp",
+  "scripts": {
+    "test": "sf apex run test --test-level RunLocalTests --code-coverage"
+  }
+}
