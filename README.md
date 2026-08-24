@@ -1,6 +1,6 @@
-# Academia DevOps - Starter Repository
+# DevOps Academy - Starter Repository
 
-Welcome to **Academia DevOps**. This is the starter repository for the DevOps bootcamp focused on Salesforce.
+Welcome to **DevOps Academy**. This is the starter repository for the DevOps bootcamp focused on Salesforce.
 
 ## ?? Prerequisites
 
@@ -233,4 +233,4 @@ Remember:
 - **Code review mindset** (write for others to understand)
 - **Test before pushing** (validate locally first)
 
-Welcome to Academia DevOps! ??
+Welcome to DevOps Academy! ??
