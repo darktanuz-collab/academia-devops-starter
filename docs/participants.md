@@ -1,4 +1,4 @@
-﻿# Participants - Academia DevOps
+﻿# Participants - DevOps Academy
 
 Track your progress as you complete the 5 labs.
 
@@ -18,4 +18,4 @@ Example: Gabriel Aguilar - Lab 1 completed - 2026-08-24
 
 Resources: [README.md](../README.md) | [LABS.md](LABS.md)
 
-Welcome to Academia DevOps! 🚀
+Welcome to DevOps Academy! 🚀

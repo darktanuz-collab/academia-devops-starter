@@ -1,4 +1,4 @@
-﻿# Academia DevOps - Detailed Labs Guide
+﻿# DevOps Academy - Detailed Labs Guide
 
 This is the step-by-step guide for the **5 practical labs** of the DevOps bootcamp.
 
@@ -87,7 +87,7 @@ Create a release tag, simulate a rollback.
 
 ---
 
-## You Completed Academia DevOps!
+## You Completed DevOps Academy!
 
 ✓ Git fundamentals
 ✓ Move changes with SFDX
