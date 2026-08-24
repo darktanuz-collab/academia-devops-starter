@@ -1,52 +1,52 @@
 # Academia DevOps - Starter Repository
 
-Bienvenido a **Academia DevOps**. Este es el repositorio de inicio para el bootcamp de DevOps enfocado en Salesforce.
+Welcome to **Academia DevOps**. This is the starter repository for the DevOps bootcamp focused on Salesforce.
 
-## 📋 Requisitos Previos
+## ?? Prerequisites
 
-Antes de empezar, asegúrate de tener instalado:
+Before you start, make sure you have installed:
 
-- **Git** - Control de versiones
-  - Verifica: `git --version`
-  - Instala desde: https://git-scm.com/
+- **Git** - Version control
+  - Verify: `git --version`
+  - Install from: https://git-scm.com/
 
-- **Visual Studio Code** - Editor de código
-  - Descarga desde: https://code.visualstudio.com/
+- **Visual Studio Code** - Code editor
+  - Download from: https://code.visualstudio.com/
 
 - **Salesforce CLI (SFDX)**
-  - Verifica: `sfdx --version`
-  - Instala desde: https://developer.salesforce.com/tools/sfdxcli
+  - Verify: `sfdx --version`
+  - Install from: https://developer.salesforce.com/tools/sfdxcli
 
-- **Salesforce Extension Pack** - Extensión de VS Code
-  - Abre VS Code → Extensions → Busca "Salesforce Extension Pack" → Instala
+- **Salesforce Extension Pack** - VS Code extension
+  - Open VS Code ? Extensions ? Search "Salesforce Extension Pack" ? Install
 
-- **Acceso a Dev Sandbox de Salesforce** - Tu organización de prueba
+- **Salesforce Dev Sandbox Access** - Your test organization
 
-## 🚀 Quick Start
+## ?? Quick Start
 
-### 1. Clonar el Repositorio
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/darktanuz-collab/academia-devops-starter.git
 cd academia-devops-starter
 ```
 
-### 2. Verificar Estructura
+### 2. Verify Structure
 
 ```bash
 ls -la
-# Deberías ver: force-app/, docs/, README.md, sfdx-project.json
+# You should see: force-app/, docs/, README.md, sfdx-project.json
 ```
 
-### 3. Autenticarte en Salesforce
+### 3. Authenticate with Salesforce
 
 ```bash
-sfdx auth:web:login --alias mi-sandbox --instanceurl https://[tu-sandbox].salesforce.com
+sfdx auth:web:login --alias my-sandbox --instanceurl https://[your-sandbox].salesforce.com
 ```
 
-Reemplaza `[tu-sandbox]` con tu sandbox URL (ej: `testorg-dev.salesforce.com`)
+Replace `[your-sandbox]` with your sandbox URL (e.g., `testorg-dev.salesforce.com`)
 
-### 4. Abrir en VS Code
+### 4. Open in VS Code
 
 ```bash
 code .
@@ -54,183 +54,183 @@ code .
 
 ---
 
-## 📚 Labs
+## ?? Labs
 
-Este repositorio contiene 5 labs prácticos para aprender DevOps con Salesforce:
+This repository contains 5 practical labs to learn DevOps with Salesforce:
 
-| Lab | Tema | Duración | Descripción |
-|-----|------|----------|-------------|
-| **Lab 1** | Git Basics | 20 min | Clonar repo, crear rama, hacer commits |
-| **Lab 2** | Move Changes (SFDX) | 20 min | Conectar a Salesforce, hacer cambios, deployar |
-| **Lab 3** | Múltiples Ambientes | 15 min | Validar cambios en Dev y QA |
+| Lab | Topic | Duration | Description |
+|-----|-------|----------|-------------|
+| **Lab 1** | Git Basics | 20 min | Clone repo, create branch, make commits |
+| **Lab 2** | Move Changes (SFDX) | 20 min | Connect to Salesforce, make changes, deploy |
+| **Lab 3** | Multiple Environments | 15 min | Validate changes in Dev and QA |
 | **Lab 4** | Pull Request Workflow | 20 min | Code review, approval, merge |
-| **Lab 5** | Release Simulation | 15 min | Tagging, versionado, rollback |
+| **Lab 5** | Release Simulation | 15 min | Tagging, versioning, rollback |
 
-**Ver detalles:** [docs/LABS.md](docs/LABS.md)
-
----
-
-## 🌳 Branch Strategy
-
-Este repositorio usa **Git Flow**:
-
-```
-main (producción)
-  ↑
-  └── release/1.0 (rama de release)
-       ↑
-       └── develop (pre-producción)
-            ↑
-            ├── feature/tu-cambio-1
-            ├── feature/tu-cambio-2
-            └── feature/tu-cambio-3
-```
-
-**Reglas:**
-- **NUNCA** hagas commit directo a `main` o `develop`
-- Siempre crea una rama `feature/tu-nombre` desde `develop`
-- Haz cambios en tu rama
-- Abre un Pull Request (PR)
-- Espera aprobación
-- Mergea cuando esté aprobado
+**See details:** [docs/LABS.md](docs/LABS.md)
 
 ---
 
-## 📝 Cómo Contribuir
+## ?? Branch Strategy
 
-### Paso 1: Crea tu Rama
+This repository uses **Git Flow**:
+
+```
+main (production)
+  ?
+  +-- release/1.0 (release branch)
+       ?
+       +-- develop (pre-production)
+            ?
+            +-- feature/your-change-1
+            +-- feature/your-change-2
+            +-- feature/your-change-3
+```
+
+**Rules:**
+- **NEVER** commit directly to `main` or `develop`
+- Always create a `feature/your-name` branch from `develop`
+- Make changes in your branch
+- Open a Pull Request (PR)
+- Wait for approval
+- Merge when approved
+
+---
+
+## ?? How to Contribute
+
+### Step 1: Create Your Branch
 
 ```bash
 git checkout develop
 git pull origin develop
-git checkout -b feature/tu-nombre
+git checkout -b feature/your-name
 ```
 
-### Paso 2: Haz Cambios
+### Step 2: Make Changes
 
-Edita archivos en `force-app/` o `docs/`
+Edit files in `force-app/` or `docs/`
 
 ```bash
-# Ejemplo: Crear Apex Class
-sfdx force:apex:class:create --classname MiClase --outputdir force-app/main/default/classes
+# Example: Create Apex Class
+sfdx force:apex:class:create --classname MyClass --outputdir force-app/main/default/classes
 ```
 
-### Paso 3: Commit los Cambios
+### Step 3: Commit Your Changes
 
 ```bash
 git add .
-git commit -m "feat: descripción de tu cambio"
-# Ej: "feat: agregar HelloWorld Apex class"
+git commit -m "feat: description of your change"
+# Example: "feat: add HelloWorld Apex class"
 ```
 
-### Paso 4: Push a GitHub
+### Step 4: Push to GitHub
 
 ```bash
-git push --set-upstream origin feature/tu-nombre
+git push --set-upstream origin feature/your-name
 ```
 
-### Paso 5: Abre un Pull Request
+### Step 5: Open a Pull Request
 
-1. Ve a https://github.com/darktanuz-collab/academia-devops-starter
+1. Go to https://github.com/darktanuz-collab/academia-devops-starter
 2. Click "Compare & Pull Request"
-3. Descripción clara de qué hiciste y por qué
+3. Write a clear description of what you did and why
 4. Click "Create Pull Request"
-5. **Espera aprobación**
+5. **Wait for approval**
 
-### Paso 6: Mergea (una vez aprobado)
+### Step 6: Merge (once approved)
 
 ```bash
 git checkout develop
 git pull origin develop
-git merge feature/tu-nombre
+git merge feature/your-name
 git push origin develop
 ```
 
 ---
 
-## 🔐 Protected Branches
+## ?? Protected Branches
 
-Las ramas `main` y `develop` están protegidas:
+The `main` and `develop` branches are protected:
 
-- ✅ Solo se pueden mergear vía Pull Request
-- ✅ Requieren aprobación del instructor
-- ✅ Las ramas se eliminan automáticamente después del merge
+- ? Only mergeable via Pull Request
+- ? Require approval from instructor
+- ? Branches auto-delete after merge
 
 ---
 
-## 📂 Estructura del Repositorio
+## ?? Repository Structure
 
 ```
 academia-devops-starter/
-├── force-app/                    # Código Salesforce
-│   └── main/
-│       └── default/
-│           ├── classes/          # Apex Classes (aquí creas las tuyas)
-│           ├── triggers/         # Apex Triggers
-│           └── objects/          # Objetos personalizados
-├── docs/                         # Documentación
-│   ├── LABS.md                   # Guía detallada de los 5 labs
-│   └── cambios.md                # Archivo donde registran su avance
-├── .gitignore                    # Archivos que Git ignora
-├── sfdx-project.json             # Configuración de SFDX
-└── README.md                     # Este archivo
++-- force-app/                    # Salesforce code
+�   +-- main/
+�       +-- default/
+�           +-- classes/          # Apex Classes (create yours here)
+�           +-- triggers/         # Apex Triggers
+�           +-- objects/          # Custom Objects
++-- docs/                         # Documentation
+�   +-- LABS.md                   # Detailed guide for 5 labs
+�   +-- participants.md           # Track your progress here
++-- .gitignore                    # Files Git ignores
++-- sfdx-project.json             # SFDX configuration
++-- README.md                     # This file
 ```
 
 ---
 
-## 🆘 Troubleshooting
+## ?? Troubleshooting
 
 ### Error: "sfdx: command not found"
 
-Salesforce CLI no está en tu PATH. Reinstala desde:
+Salesforce CLI is not in your PATH. Reinstall from:
 https://developer.salesforce.com/tools/sfdxcli
 
 ### Error: "No org configured"
 
-No has autenticado tu org. Ejecuta:
+You haven't authenticated your org. Run:
 
 ```bash
-sfdx auth:web:login --alias mi-sandbox --instanceurl https://[tu-sandbox].salesforce.com
+sfdx auth:web:login --alias my-sandbox --instanceurl https://[your-sandbox].salesforce.com
 ```
 
-### Error: "Permission denied" en Git
+### Error: "Permission denied" on Git
 
-Configura tus credenciales de GitHub:
+Configure your Git credentials:
 
 ```bash
-git config --global user.name "Tu Nombre"
-git config --global user.email "tu.email@gmail.com"
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
 ```
 
 ### Error: "Merge conflict"
 
-Si dos branches modifican el mismo archivo:
+If two branches modify the same file:
 
 ```bash
-# Ver conflictos
+# See conflicts
 git status
 
-# Edita manualmente el archivo, resuelve conflictos
-# Luego:
+# Edit the file manually to resolve conflicts
+# Then:
 git add .
-git commit -m "fix: resolver merge conflict"
+git commit -m "fix: resolve merge conflict"
 git push
 ```
 
 ---
 
-## 📞 Contacto
+## ?? Contact
 
-¿Preguntas? Abre un **Issue** en este repositorio o contacta al instructor.
+Questions? Open an **Issue** in this repository or contact the instructor.
 
 ---
 
-## ⭐ Buena Suerte
+## ? Good Luck
 
-Recuerda:
-- **Small commits** (cambios pequeños y frecuentes)
-- **Clear commit messages** (describe QUÉ y POR QUÉ)
-- **Code review mindset** (escribe para que otros entiendan)
-- **Test before pushing** (valida localmente primero)
+Remember:
+- **Small commits** (small and frequent changes)
+- **Clear commit messages** (describe WHAT and WHY)
+- **Code review mindset** (write for others to understand)
+- **Test before pushing** (validate locally first)
 
-¡Bienvenido a Academia DevOps! 🚀
+Welcome to Academia DevOps! ??
